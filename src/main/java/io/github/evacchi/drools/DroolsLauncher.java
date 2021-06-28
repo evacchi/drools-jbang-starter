@@ -1,4 +1,4 @@
-package io.github.evacchi.drools;
+package com.github.evacchi;
 
 import org.kie.api.*;
 import org.kie.api.builder.*;
