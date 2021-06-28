@@ -25,9 +25,9 @@ public class DroolsLauncher {
     }
 
     public KieSession session() {
-        var kieBuilder = kieServices.newKieBuilder(kfs).buildAll();
+        KieBuilder kieBuilder = kieServices.newKieBuilder(kfs).buildAll();
 
-        var results = kieBuilder.getResults();
+        Results results = kieBuilder.getResults();
         if(results.hasMessages(Message.Level.ERROR)){
             System.err.println("Errors building the rule base.");
             System.err.println(results.getMessages());
